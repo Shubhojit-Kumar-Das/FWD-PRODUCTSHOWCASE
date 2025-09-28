@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP 24x7</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-glow">🌐 Online 24x7</div>
+      <h1 class="shop-name">SHOP 24x7</h1>
+      <div class="cart-container">
+        <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+      </div>
+    </header>
+
+    <nav class="filter-bar">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Electronics">
+        Electronics
+      </button>
+      <button class="filter-btn" data-category="Clothing">Clothing</button>
+      <button class="filter-btn" data-category="Footwear">Footwear</button>
+      <button class="filter-btn" data-category="Home Appliances">
+        Home Appliances
+      </button>
+      <button class="filter-btn" data-category="Beauty & Care">
+        Beauty & Care
+      </button>
+    </nav>
+
+    <main class="products-grid">
+      <!-- Electronics -->
+      <div
+        class="product"
+        data-category="Electronics"
+        data-name="Smartphone"
+        data-price="15000"
+        data-desc="Latest 5G smartphone with stunning camera and display."
+        data-img="images/smart phone.jpg"
+      >
+        <img src="images/smart phone.jpg" alt="Smartphone" />
+        <h3>Smartphone</h3>
+        <p>₹15,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Electronics"
+        data-name="Laptop"
+        data-price="55000"
+        data-desc="High performance laptop for work and gaming."
+        data-img="images/laptop.jpg"
+      >
+        <img src="images/laptop.jpg" alt="Laptop" />
+        <h3>Laptop</h3>
+        <p>₹55,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Electronics"
+        data-name="Headphones"
+        data-price="2000"
+        data-desc="Noise-cancelling wireless headphones with deep bass."
+        data-img="images/headphone.jpg"
+      >
+        <img src="images/headphone.jpg" alt="Headphones" />
+        <h3>Headphones</h3>
+        <p>₹2,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Clothing -->
+      <div
+        class="product"
+        data-category="Clothing"
+        data-name="T-shirt"
+        data-price="600"
+        data-desc="Comfortable cotton t-shirt with modern fit."
+        data-img="images/t-shirt.jpg"
+      >
+        <img src="images/t-shirt.jpg" alt="T-shirt" />
+        <h3>T-shirt</h3>
+        <p>₹600</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Clothing"
+        data-name="Jeans"
+        data-price="1500"
+        data-desc="Classic blue denim jeans, durable and stylish."
+        data-img="images/jeans.jpg"
+      >
+        <img src="images/jeans.jpg" alt="Jeans" />
+        <h3>Jeans</h3>
+        <p>₹1,500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Clothing"
+        data-name="Jacket"
+        data-price="2500"
+        data-desc="Warm stylish jacket perfect for winters."
+        data-img="images/jacket.jpg"
+      >
+        <img src="images/jacket.jpg" alt="Jacket" />
+        <h3>Jacket</h3>
+        <p>₹2,500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Footwear -->
+      <div
+        class="product"
+        data-category="Footwear"
+        data-name="Sneakers"
+        data-price="2000"
+        data-desc="Trendy sneakers with superior comfort."
+        data-img="images/sneaker.jpg"
+      >
+        <img src="images/sneaker.jpg" alt="Sneakers" />
+        <h3>Sneakers</h3>
+        <p>₹2,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Footwear"
+        data-name="Sandals"
+        data-price="800"
+        data-desc="Lightweight sandals for casual outings."
+        data-img="images/sandal.jpg"
+      >
+        <img src="images/sandal.jpg" alt="Sandals" />
+        <h3>Sandals</h3>
+        <p>₹800</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Footwear"
+        data-name="Boots"
+        data-price="3000"
+        data-desc="Leather boots for adventure and durability."
+        data-img="images/boots.jpg"
+      >
+        <img src="images/boots.jpg" alt="Boots" />
+        <h3>Boots</h3>
+        <p>₹3,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Home Appliances -->
+      <div
+        class="product"
+        data-category="Home Appliances"
+        data-name="Mixer"
+        data-price="1500"
+        data-desc="Efficient kitchen mixer for daily use."
+        data-img="images/mixer.jpg"
+      >
+        <img src="images/mixer.jpg" alt="Mixer" />
+        <h3>Mixer</h3>
+        <p>₹1,500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Home Appliances"
+        data-name="Microwave"
+        data-price="7000"
+        data-desc="Modern microwave with smart settings."
+        data-img="images/microwave.jpg"
+      >
+        <img src="images/microwave.jpg" alt="Microwave" />
+        <h3>Microwave</h3>
+        <p>₹7,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Home Appliances"
+        data-name="Refrigerator"
+        data-price="25000"
+        data-desc="Energy efficient refrigerator with ample storage."
+        data-img="images/refrigerator.jpg"
+      >
+        <img src="images/refrigirator.jpg" alt="Refrigerator" />
+        <h3>Refrigerator</h3>
+        <p>₹25,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Beauty & Care -->
+      <div
+        class="product"
+        data-category="Beauty & Care"
+        data-name="Perfume"
+        data-price="1200"
+        data-desc="Long-lasting perfume with floral notes."
+        data-img="images/perfume.jpg"
+      >
+        <img src="images/perfume.jpg" alt="Perfume" />
+        <h3>Perfume</h3>
+        <p>₹1,200</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Beauty & Care"
+        data-name="Lotion"
+        data-price="500"
+        data-desc="Moisturizing body lotion for smooth skin."
+        data-img="images/lotion.jpg"
+      >
+        <img src="images/lotion.jpg" alt="Lotion" />
+        <h3>Lotion</h3>
+        <p>₹500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div
+        class="product"
+        data-category="Beauty & Care"
+        data-name="Shampoo"
+        data-price="300"
+        data-desc="Refreshing shampoo for healthy hair."
+        data-img="images/shampoo.jpg"
+      >
+        <img src="images/shampoo.jpg" alt="Shampoo" />
+        <h3>Shampoo</h3>
+        <p>₹300</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content cart-box">
+        <span id="close-cart">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="total-price">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content product-box">
+        <span id="close-product">&times;</span>
+        <img id="product-img" src="" alt="" />
+        <h2 id="product-title"></h2>
+        <p id="product-desc"></p>
+        <p><strong>Price:</strong> ₹<span id="product-price"></span></p>
+        <button id="modal-add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
